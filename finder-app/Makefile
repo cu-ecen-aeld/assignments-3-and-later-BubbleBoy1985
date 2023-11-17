@@ -1,5 +1,5 @@
-CROSS_COMPILE=aarch64-none-linux-gnu-
-#CROSS_COMPILE=
+#CROSS_COMPILE=aarch64-none-linux-gnu-
+CROSS_COMPILE=
 GCC=$(CROSS_COMPILE)gcc
 TARGET=writer
 
