@@ -12,4 +12,4 @@ $(TARGET): $(TARGET).o
 	$(GCC) -Wall -c $<
      
 clean:
-	rm $(TARGET) $(TARGET).o
+	rm -f $(TARGET) $(TARGET).o
