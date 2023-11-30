@@ -1,15 +1,15 @@
 #CROSS_COMPILE=aarch64-none-linux-gnu-
 CROSS_COMPILE=
-GCC=$(CROSS_COMPILE)gcc
+CC=$(CROSS_COMPILE)gcc
 TARGET=writer
 
 all: $(TARGET)
  
 $(TARGET): $(TARGET).o
-	$(GCC) -o $@ $<
+	$(CC) -o $@ $<
 
 %.o: %.c
-	$(GCC) -Wall -c $<
+	$(CC) -Wall -c $<
      
 clean:
 	rm -f $(TARGET) $(TARGET).o
