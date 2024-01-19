@@ -1,4 +1,8 @@
-#!/bin/bash
+# aesdsocket 
+#! /bin/sh
+#
+#
+
 
 
 case "$1" in
