@@ -197,8 +197,8 @@ int main(int argc, char *argv[])
         chdir("/");
         umask(0);
         close(STDIN_FILENO);
-        //close(STDOUT_FILENO);
-        //close(STDERR_FILENO);
+        close(STDOUT_FILENO);
+        close(STDERR_FILENO);
     }
      
     // listen to in comming connections 
